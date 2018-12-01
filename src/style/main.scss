@@ -1,0 +1,129 @@
+@import '_layout.scss';
+@import '_element-theme.scss';
+html,
+body,
+#app {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+  min-width: 1366px;
+}
+
+.min-container {
+  min-width: 1366px;
+  min-height: 568px;
+}
+
+*,
+*:before,
+*:after {
+  outline: none;
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box;
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.content-height {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.fabric,
+.fabric canvas,
+.fabric .canvas-container {
+  border-radius: 8px;
+}
+
+.fabric .canvas-container {
+  box-shadow: 0 4px 12px rgba(6,31,50,.24);
+}
+
+.center {
+  text-align: center;
+}
+
+.faster {
+  animation-duration: 0.5s;
+}
+
+.no-data {
+  text-align: center;
+  margin-top: 20vh;
+  p {
+    color: #A3A3A3;
+  }
+}
+
+.p10 {
+  padding: 0 10px;
+}
+
+.p5 {
+  padding: 0 5px;
+}
+
+.s-product-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 100%;
+  background-color: #41403F;
+  z-index: 199;
+  text-align: left;
+  overflow: auto;
+  .el-icon-close {
+    cursor: pointer;
+    color: #ddd;
+    font-size: 32px;
+    margin: 10px 10px 0 10px;
+  }
+  .el-icon-close:hover {
+    color: #fff;
+  }
+}
+
+.required {
+  color: red;
+}
+
+.product-cover {
+  display: block;
+  margin: 10px;
+  height: 240px;
+  width: 180px;
+  background: no-repeat center / contain;
+  will-change: transform;
+  background-image: url("http://zhulogic-dev.oss-cn-hangzhou.aliyuncs.com/03a62080-f801-df5e-f29e-b1574021c4f8?x-oss-process=style/w660");
+}
+
+i.icon-star:hover::before {
+  content: "\e698";
+  color: #f3a534;
+}
